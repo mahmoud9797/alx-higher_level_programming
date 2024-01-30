@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Rectangle class."""
 
+
 class Rectangle:
     """define class"""
     def __init__(self, width=0, height=0):
@@ -17,6 +18,7 @@ class Rectangle:
     def width(self):
         """get the width of rectangle"""
         return self.__width
+
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
@@ -24,10 +26,12 @@ class Rectangle:
         elif value < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
+
     @property
     def height(self):
         """get the value of height of rectangle"""
         return self.__height
+
     @height.setter
     def height(self, value):
         if not isinstance(value, int):
