@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-""" deifine an empty class"""
+"""deifine an empty class"""
+
 class Rectangle:
-    """ an empty class """
+    """an empty class"""
     pass
