@@ -6,4 +6,4 @@ import json
 def load_from_json_file(filename):
     """function that creates an Object from a “JSON file"""
     with open(filename) as txt_f:
-        return json.load(filename, txt_f)
+        return json.load(txt_f)
