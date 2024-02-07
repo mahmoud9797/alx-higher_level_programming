@@ -3,7 +3,7 @@
 
 
 def write_file(filename="", text=""):
-    """ two args : 
+    """two args :
     filename ( is the name of text file we will write on it
     text is the text we would like to write it on the file"""
 
