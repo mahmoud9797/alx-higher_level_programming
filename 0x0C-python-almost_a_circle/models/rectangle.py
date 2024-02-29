@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """rectangle class module"""
 from models.base import Base
 
@@ -17,39 +17,37 @@ class Rectangle(Base):
     @property
     def width(self):
         """rectangle width"""
-        return self.__width
+        return self.width
 
     @width.setter
     def width(self, value):
-        """width settet"""
-        self.__width = value
+        """ width setter """
+        self.width = value
 
     @property
     def height(self):
         """rectangle height"""
-        return self.__height
+        return self.height
 
     @height.setter
     def height(self, value):
-        """height setter"""
-        self.__height = value
+        self.height = value
 
     @property
     def x(self):
-        """x getter"""
-        return self.__x
+        return self.x
 
     @x.setter
     def x(self, value):
-        """x setter"""
-        self.__x = value
+        """x is rectangle coordinate"""
+        self.x = value
 
     @property
     def y(self):
-        """y getter"""
-        return self.__y
+        """y is the rectangle coordinate"""
+        return self.y
     
     @y.setter
     def y(self, value):
-        """y setter"""
-        self.__y = value
+        """ y setter """
+        self.y = value
