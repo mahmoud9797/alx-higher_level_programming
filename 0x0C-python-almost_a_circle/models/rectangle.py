@@ -17,37 +17,37 @@ class Rectangle(Base):
     @property
     def width(self):
         """rectangle width"""
-        return self.width
+        return self.__width
 
     @width.setter
     def width(self, value):
         """ width setter """
-        self.width = value
+        self.__width = value
 
     @property
     def height(self):
         """rectangle height"""
-        return self.height
+        return self.__height
 
     @height.setter
     def height(self, value):
-        self.height = value
+        self.__height = value
 
     @property
     def x(self):
-        return self.x
+        return self.__x
 
     @x.setter
     def x(self, value):
         """x is rectangle coordinate"""
-        self.x = value
+        self.__x = value
 
     @property
     def y(self):
         """y is the rectangle coordinate"""
-        return self.y
+        return self.__y
     
     @y.setter
     def y(self, value):
         """ y setter """
-        self.y = value
+        self.__y = value
