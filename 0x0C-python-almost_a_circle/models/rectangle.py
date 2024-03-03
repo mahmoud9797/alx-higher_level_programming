@@ -46,7 +46,7 @@ class Rectangle(Base):
     def y(self):
         """y is the rectangle coordinate"""
         return self.__y
-    
+
     @y.setter
     def y(self, value):
         """ y setter """
