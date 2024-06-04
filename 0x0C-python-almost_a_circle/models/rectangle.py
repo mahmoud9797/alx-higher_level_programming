@@ -50,6 +50,10 @@ class Rectangle(Base):
     @y.setter
     def y(self, value):
         """ y setter """
+        if not isinstance(value, int):
+            raise TypeError("must be an integer")
+        elif y < 0:
+            raise Value
         self.__y = value
 
     def area(self):
