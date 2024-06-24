@@ -7,4 +7,10 @@ from sys import argv
 if __name__ == "__main__":
     conn = MySQLdb.connect(host="localhost", port=3306, user=argv[1], passwd=argv[2], db=argv[3])
     curr = conn.cursor()
-    msg = "SELECT * FROM states WHERE name LIKE BINARY
+    msg = "SELECT * FROM states WHERE name LIKE BINARY '{}'".format(argv[4])
+    curr.execute(msg)
+    table_rows = curr.fetchall()
+    for rows in table_rows:
+        print(rows)
+    curr.close()
+    conn.close()
